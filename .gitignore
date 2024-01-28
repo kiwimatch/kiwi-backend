@@ -8,11 +8,6 @@
 *.out
 */_test/
 
-# Compiled Go binaries
-*.test
-*.exe
-*.prof
-
 # Dependency directories
 vendor/
 Godeps/
@@ -20,3 +15,4 @@ Godeps/
 
 # Custom
 /tmp
+.env

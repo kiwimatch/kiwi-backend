@@ -10,21 +10,21 @@ services:
     build: '.'
     restart: on-failure
     ports:
-      - "8000:8000"
+      - "8080:8080"
     expose:
-      - 8000
+      - 8080
     env_file:
       - .env
     healthcheck:
-      test: curl -f http://localhost:8000 || exit 1
+      test: curl -f http://localhost:8080 || exit 1
       interval: 30s
       timeout: 3s
       retries: 3
     depends_on:
-      postgres-db:
+      kiwi-db:
         condition: service_healthy
   
-  postgres-db:
+  kiwi-db:
     container_name: kiwi-db
     image: postgres:latest
     restart: always
