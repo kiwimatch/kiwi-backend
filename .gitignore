@@ -1,0 +1,22 @@
+# Go (Golang)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*/_test/
+
+# Compiled Go binaries
+*.test
+*.exe
+*.prof
+
+# Dependency directories
+vendor/
+Godeps/
+*/.glide/
+
+# Custom
+/tmp
